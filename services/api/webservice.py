@@ -303,6 +303,9 @@ def downloadFile():
             )
         )
 
+def create_app():
+    db.open()
+    return application
 
 if __name__ == "__main__":
     try:
