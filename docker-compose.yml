@@ -41,6 +41,13 @@ services:
       FLAG_REGEX: ${FLAG_REGEX}
       TICK_START: ${TICK_START}
       TICK_LENGTH: ${TICK_LENGTH}
+  mcp:
+    build:
+      context: mcp
+    ports:
+      - "127.0.0.1:8000:8000"
+    networks:
+      - internal
 
   assembler:
     build:
