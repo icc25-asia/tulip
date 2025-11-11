@@ -14,4 +14,4 @@ COPY main.py ./
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-CMD ["uv", "run", "mcp", "run", "main.py", "--transport", "streamable-http"]
+CMD ["uv", "run", "main.py"]
