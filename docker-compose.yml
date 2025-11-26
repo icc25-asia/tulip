@@ -57,6 +57,13 @@ services:
       TICK_START: ${TICK_START}
       TICK_LENGTH: ${TICK_LENGTH}
       VM_IP: ${VM_IP}
+  mcp:
+    build:
+      context: mcp
+    ports:
+      - "127.0.0.1:8000:8000"
+    networks:
+      - internal
 
   flagids:
     restart: unless-stopped
